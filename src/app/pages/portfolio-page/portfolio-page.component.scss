@@ -1,0 +1,21 @@
+.img-cover{
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+    position: relative;
+  
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      object-position: center;
+    }
+  }
+
+  .profile-panel{
+    border-radius:38% 62% 67% 33% / 46% 50% 50% 54% ;
+    background-color: purple;
+  }
