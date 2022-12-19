@@ -1,0 +1,44 @@
+.menu-item{
+    display: flex;
+    max-width: 992px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+:host::ng-deep .p-menu{
+    width: 100%;
+    padding: 0.25rem;
+    border: none;
+
+    .p-menuitem-link{
+        border-radius: 0.25rem;
+
+        &:focus{
+            box-shadow: none;
+        }
+
+        &:active{
+            // background-color: red;
+        }
+    }
+}
+
+:host::ng-deep .p-toolbar-group-right {
+  .p-menu{
+    ul {
+        display: flex;
+      }
+  } 
+}
+
+:host::ng-deep .p-toolbar{
+    padding: 1rem;
+    border-radius: 0;
+    width: 100%;
+}
+
+:host::ng-deep .pi-bars:before{
+    font-size: 2rem;
+}
+

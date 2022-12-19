@@ -1,1 +1,28 @@
-<p>header works!</p>
+<div class="header">
+  <div class="header-panel p-3 xl:px-0 md:pt-6 flex">
+    <div class="menu-item mx-auto">
+      <div class="flex align-items-center" routerLink="/">
+        <img
+          src="/assets/imgs/icons/letter-m-large.png"
+          width="40px"
+          height="40px"
+          alt="methanick"
+        />
+        <h1 class="hidden sm:block pl-2 my-2">METHANICK</h1>
+      </div>
+      <div class="p-toolbar-group-right">
+        <button
+        pButton
+          class="md:hidden p-button-text"
+          type="button"
+          (click)="display = true"
+          icon="pi pi-bars"
+        ></button>
+        <p-menu class="hidden md:block" [model]="items"></p-menu>
+      </div>
+    </div>
+  </div>
+  <p-sidebar [(visible)]="display" position="right">
+    <p-menu [model]="items"  (click)="display = false"></p-menu>
+  </p-sidebar>
+</div>

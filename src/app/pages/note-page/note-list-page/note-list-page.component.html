@@ -1,0 +1,20 @@
+<div class="note-title">
+    <h1 class="mt-0">
+      <i class="text-3xl font-bold pr-2 pi pi-edit"></i>MY NOTE
+    </h1>
+  </div>
+  <div class="note-search flex justify-content-between mb-4">
+    <input class="w-full mr-3" type="text" pInputText [(ngModel)]="searchText" placeholder="Search">         
+    <button pButton type="button" icon="pi pi-search" iconPos="left"><span class="pl-1 mr-3 font-bold hidden md:block">Search</span></button>
+  </div>
+  <div class="note-list">
+    <div
+    class="mb-3"
+      *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    >
+    <p-card class="w-full" header="header">
+        Content
+    </p-card>
+    </div>
+  </div>
+  
